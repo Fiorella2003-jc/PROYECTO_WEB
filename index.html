@@ -8,12 +8,15 @@
 </head>
 
 <body>
+    <div id="progreso-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: transparent; z-index: 9999;">
+        <div id="barra-progreso" style="height: 100%; background: #007bff; width: 0%;"></div>
+    </div>
 
     <header class="contenedor">
         <h1 class="titulo">Fiorella Alvina Jaramillo Campos</h1>
     </header>
 
-    <div class="nav-bg">
+    <div class="nav-bg navbar">
         <nav class="navegacion-principal contenedor">
             <a href="inicio.html">Inicio</a>
             <a href="sobre mi.html">Sobre mi</a>
@@ -22,7 +25,6 @@
         </nav>
     </div>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="contenido-hero">
             <h2>Mi primera página web de servicios</h2>
@@ -41,9 +43,9 @@
             <a href="#" class="boton">Contactar</a>
         </div>
         
+        <button id="btnTop" title="Volver arriba">↑ Ir arriba</button>
     </section>
 
-    <!-- SERVICIOS -->
     <main class="contenedor sombra">
         <h2>Mis Servicios</h2>
 
@@ -114,7 +116,6 @@
         </div>
     </main>
 
-    <!-- FORMULARIO -->
     <section>
         <h2>Contacto</h2>
 
@@ -158,5 +159,6 @@
         <p>Todos los derechos reservados - Fiorella Alvina JC</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

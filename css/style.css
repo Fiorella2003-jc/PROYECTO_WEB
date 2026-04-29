@@ -249,3 +249,47 @@ h1,h2,h3 {
 .footer {
     text-align: center;
 }
+
+/* Esto es lo que hace que el botón te siga */
+#btnTop {
+    display: none;       /* El Script cambiará esto a 'block' cuando bajes */
+    position: fixed;    /* ¡ESTO ES LO MÁS IMPORTANTE! Lo hace flotar */
+    bottom: 30px;       /* Lo pega a 30px del borde inferior */
+    right: 30px;        /* Lo pega a 30px del borde derecho */
+    z-index: 1000;      /* Lo pone por encima de todo lo demás */
+    
+    /* Estilos para que se vea como un botón real */
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%; /* Lo hace redondito si quieres */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Estilos para que el menú cambie al bajar */
+.navbar {
+    transition: background-color 0.4s ease; /* Cambio suave */
+}
+
+.navbar-scrolled {
+    background-color: #000000 !important; /* Se pone negro sólido */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Este es el estado del menú normal */
+.nav-bg {
+    transition: all 0.4s ease; /* Para que el cambio sea suave */
+    width: 100%;
+    z-index: 1000; /* Para que siempre esté por encima de las imágenes */
+}
+
+/* Esta es la clase que el JavaScript agrega al bajar */
+.navbar-scrolled {
+    position: fixed;     /* ¡ESTO ES LO QUE LO DEJA PEGADO! */
+    top: 0;              /* Lo pega al borde superior */
+    left: 0;
+    background-color: #000000 !important; /* Color negro al bajar */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
