@@ -33,7 +33,7 @@
         <section class="section-projects">
             <h2 class="section-title">Mi Portafolio</h2>
             <div class="projects-grid">
-                
+               
                 <div class="project-card">
                     <div class="project-img-wrapper">
                         <img src="https://www.matrixc.com/wp-content/uploads/2025/07/Transforming-the-Retail-Experience-with-Google-Clouds-Smart-Analytics-Tools.png" alt="Smart Analytics" referrerpolicy="no-referrer">
@@ -103,6 +103,44 @@
             </div>
         </section>
 
+        <section class="section-equipo">
+            <h2 class="section-title">Únete a mi Equipo</h2>
+            <div class="profile-text-wrapper">
+                <form action="guardar-SobreMi.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" name="correo" id="correo" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Número de Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ej. 930828281" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="especialidad">Especialidad</label>
+                        <select name="especialidad" id="especialidad" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                            <option value="">Selecciona una especialidad</option>
+                            <option value="Frontend">Frontend</option>
+                            <option value="Backend">Backend</option>
+                            <option value="UI/UX">UI/UX Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">¿Por qué quieres unirte?</label>
+                        <textarea name="mensaje" id="mensaje" rows="4" placeholder="Cuéntanos sobre tus habilidades..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-regresar" style="border: none; cursor: pointer; width: 100%; background-color: #ff3366; color: white;">Enviar Postulación</button>
+                </form>
+            </div>
+        </section>
         <div class="footer-actions">
             <a href="index.html" class="btn-regresar">Inicio</a>
         </div>

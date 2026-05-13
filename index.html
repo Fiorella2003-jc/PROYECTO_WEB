@@ -15,11 +15,11 @@
     <header class="contenedor">
         <h1 class="titulo">Fiorella Alvina Jaramillo Campos</h1>
     </header>
-
+ 
     <div class="nav-bg navbar">
         <nav class="navegacion-principal contenedor">
             <a href="inicio.html">Inicio</a>
-            <a href="sobre mi.html">Sobre mi</a>
+            <a href="sobre-mi.html">Sobre mi</a>
             <a href="clientes.html">Clientes</a>
             <a href="contactos.html">Contactos</a>
         </nav>
@@ -30,7 +30,7 @@
             <h2>Mi primera página web de servicios</h2>
             <p>
             <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg" 
             width="32"
             height="32"
             viewBox="0 0 24 24"
@@ -119,7 +119,7 @@
     <section>
         <h2>Contacto</h2>
 
-        <form class="formulario">
+        <form class="formulario" id="miFormulario" action="guardar.php" method="POST">
             <fieldset>
                 <legend>Contáctanos llenando todos los campos</legend>
 
@@ -127,22 +127,22 @@
 
                     <div class="campo">
                         <label>Nombre</label>
-                        <input class="input-text" type="text" placeholder="Tu nombre">
+                        <input class="input-text" type="text" name="nombre" placeholder="Tu nombre">
                     </div>
 
                     <div class="campo">
                         <label>Teléfono</label>
-                        <input class="input-text" type="tel" placeholder="Tu teléfono">
+                        <input class="input-text" type="tel" name="telefono" placeholder="Tu teléfono">
                     </div>
 
                     <div class="campo">
                         <label>Correo</label>
-                        <input class="input-text" type="email" placeholder="Tu correo">
+                        <input class="input-text" type="email" name="correo" placeholder="Tu correo">
                     </div>
 
                     <div class="campo">
                         <label>Mensaje</label>
-                        <textarea class="input-text"></textarea>
+                        <textarea class="input-text" name="mensaje"></textarea>
                     </div>
 
                 </div>

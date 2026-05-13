@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. BARRA DE PROGRESO
+    // BARRA DE PROGRESO
     const barra = document.getElementById("barra-progreso");
     window.addEventListener("scroll", () => {
         if (barra) {
@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 2. BOTÓN IR ARRIBA
+    // BOTÓN IR ARRIBA
     const btnTop = document.getElementById("btnTop");
     if (btnTop) {
         window.addEventListener("scroll", () => {
-            // Aparece solo después de bajar 300px
             btnTop.style.display = window.scrollY > 300 ? "block" : "none";
         });
 
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 3. NAVBAR QUE CAMBIA DE COLOR
+    // NAVBAR QUE CAMBIA DE COLOR
     const navbar = document.querySelector(".navbar");
     if (navbar) {
         window.addEventListener("scroll", () => {
